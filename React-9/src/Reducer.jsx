@@ -20,15 +20,7 @@ const reducer = (state,action)=>{
 const Reducer = () => {
     const [number,dispatch]=useReducer(reducer,0);
     const [error,setError]=useState(null);
-useEffect(()=>{
-    const ere =
-    try {
-        reducer
-    } catch (error) {
-        setError(error)
-    }
-ere()
-},[])
+
     const increasHandler = ()=>{
         dispatch("INCEAS")
     }
